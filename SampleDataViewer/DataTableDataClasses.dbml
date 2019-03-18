@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TestDatabase" Class="DataTableDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DataServer;Initial Catalog=SampleDatabase;Persist Security Info=True;User ID=SampleUser" SettingsObjectName="DataTableDataViewer.Properties.Settings" SettingsPropertyName="ConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DataTable" Member="DataTables">
+    <Type Name="DataTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="product_name" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="part_number" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="camera_position" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="camera_result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="product_result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="characteristic1" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="characteristic2" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="characteristic3" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="characteristic4" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
